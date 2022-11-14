@@ -43,41 +43,6 @@ namespace ShortLink.Application.Services
             return UrlRequestResult.Success;
         }
 
-        public async Task AddUserAgent(string userAgnet)
-        {
-            var uaParser = Parser.GetDefault();
-            ClientInfo client = uaParser.Parse(userAgnet);
-
-            var Os = new Os()
-            {
-                Family = client.OS.Family,
-                Major = client.OS.Major,
-                Minor = "No Data",
-                CreateDate =DateTime.Now
-            };
-            await _linkRepository.AddOs(Os);
-           
-
-            var device = new ShortLink.Domain.Models.Link.Device
-            {
-                IsBot = client.Device.IsSpider,
-                Brand = client.Device.Brand,
-                Family = client.Device.Family,
-                Model = client.Device.Model,
-                CreateDate = DateTime.Now
-            };
-            await _linkRepository.AddDevive(device);
-
-            var brower = new ShortLink.Domain.Models.Link.Brower
-            {
-                Family = client.UA.Family,
-                Major = client.UA.Major,
-                Minor = client.UA.Minor,
-                CreateDate = DateTime.Now
-            };
-            await _linkRepository.AddBrower(brower);
-            await _linkRepository.SaveChange();
-        }
 
         public async Task<ShortUrl> FindUrlByToken(string token)
         {

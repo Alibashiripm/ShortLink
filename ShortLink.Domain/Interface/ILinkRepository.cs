@@ -10,9 +10,7 @@ namespace ShortLink.Domain.Interface
     {
         #region link
         Task AddLink(ShortUrl url);
-        Task AddOs(Os os);
-        Task AddDevive(Device device);
-        Task AddBrower(Brower brower);
+  
         Task<ShortUrl> FindUrlByToken(string token);
         Task AddRequsetUrl(RequestUrl requestUrl);
         Task<List<AllLinkViewModel>> GetAllLink();

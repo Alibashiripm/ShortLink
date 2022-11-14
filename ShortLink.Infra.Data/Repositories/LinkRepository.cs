@@ -26,20 +26,6 @@ namespace ShortLink.Infra.Data.Repositories
             await _context.ShortUrls.AddAsync(url);
         }
 
-        public async Task AddOs(Os os)
-        {
-            await _context.Os.AddAsync(os);
-        }
-
-        public async Task AddBrower(Brower brower)
-        {
-            await _context.Browers.AddAsync(brower);
-        }
-
-        public async Task AddDevive(Device device)
-        {
-            await _context.Devices.AddAsync(device);
-        }
         public async Task<ShortUrl> FindUrlByToken(string token)
         {
             return await _context.ShortUrls.AsQueryable().SingleOrDefaultAsync(u => u.Token == token);

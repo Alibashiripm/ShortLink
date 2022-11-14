@@ -309,16 +309,6 @@ C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\staticwebassets\
 C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\ShortLink.Web.TagHelpers.input.cache
 C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\ShortLink.Web.TagHelpers.output.cache
 C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\ShortLink.Web.RazorCoreGenerate.cache
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Account\CreateUser.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Account\EditUser.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Account\Index.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminNavbar.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
-C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\ALI.B\Desktop\ShortLink\ShortLink.Web\obj\Debug\net5.0\Razor\Views\Shared\_FooterRefrence.cshtml.g.cs

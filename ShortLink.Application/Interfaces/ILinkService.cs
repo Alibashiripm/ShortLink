@@ -12,7 +12,6 @@ namespace ShortLink.Application.Interfaces
         #region link
         ShortUrl QuickShortUrl(Uri uri);
         Task<UrlRequestResult> AddLink(ShortUrl url);
-        Task AddUserAgent(string userAgnet);
         Task<ShortUrl> FindUrlByToken(string token);
         Task AddRequestUrl(string token);
         Task<List<AllLinkViewModel>> GetAllLink();

@@ -80,24 +80,6 @@ namespace ShortLink.Web
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.Use(async (context, next) =>
-            {
-                if (context.Request.Path.StartsWithSegments("/admin"))
-                {
-                    if (!context.User.Identity.IsAuthenticated)
-                    {
-                        context.Response.Redirect("/login");
-                    }
-                    else if (!bool.Parse(context.User.FindFirstValue("IsAdmin")))
-                    {
-                        context.Response.Redirect("/login");
-                    }
-                }
-
-
-                await next.Invoke();
-            });
-
 
             app.UseEndpoints(endpoints =>
             {

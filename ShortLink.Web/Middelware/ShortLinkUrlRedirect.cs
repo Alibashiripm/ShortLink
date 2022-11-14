@@ -23,12 +23,11 @@ namespace ShortLink.Web.Middelware
         public async Task Invoke(HttpContext httpContext)
         {
             _linkService = (ILinkService)httpContext.RequestServices.GetService(typeof(ILinkService));
-            var userAgent = StringValues.Empty;
-            httpContext.Request.Headers.TryGetValue("User-Agent", out userAgent);
+    
 
             if(httpContext.Request.Path.ToString().Length == 9 && httpContext.Request.Path.ToString()== "register")
             {
-         await _linkService.AddUserAgent(userAgent);
+      
                 var token = httpContext.Request.Path.ToString().Substring(1);
                 var shortUrl = await _linkService.FindUrlByToken(token);
                 await _linkService.AddRequestUrl(token);
