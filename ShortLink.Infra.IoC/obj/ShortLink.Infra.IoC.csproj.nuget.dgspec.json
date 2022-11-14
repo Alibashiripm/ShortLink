@@ -1,0 +1,292 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.IoC\\ShortLink.Infra.IoC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\ShortLink.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\ShortLink.Application.csproj",
+        "projectName": "ShortLink.Application",
+        "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\ShortLink.Application.csproj",
+        "packagesPath": "C:\\Users\\ALI.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ALI.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj": {
+                "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "UAParser": {
+              "target": "Package",
+              "version": "[3.1.47, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj",
+        "projectName": "ShortLink.Domain",
+        "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj",
+        "packagesPath": "C:\\Users\\ALI.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ALI.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.Data\\ShortLink.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.Data\\ShortLink.Infra.Data.csproj",
+        "projectName": "ShortLink.Infra.Data",
+        "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.Data\\ShortLink.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\ALI.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ALI.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj": {
+                "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.IoC\\ShortLink.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.IoC\\ShortLink.Infra.IoC.csproj",
+        "projectName": "ShortLink.Infra.IoC",
+        "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.IoC\\ShortLink.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\ALI.B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ALI.B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\ShortLink.Application.csproj": {
+                "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\ShortLink.Application.csproj"
+              },
+              "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj": {
+                "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Domain\\ShortLink.Domain.csproj"
+              },
+              "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.Data\\ShortLink.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Infra.Data\\ShortLink.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

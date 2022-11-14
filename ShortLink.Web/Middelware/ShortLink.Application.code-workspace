@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../ShortLink.Application"
+		},
+		{
+			"path": "../../ShortLink.Domain"
+		},
+		{
+			"path": "../../ShortLink.Infra.Data"
+		},
+		{
+			"path": "../../ShortLink.Infra.IoC"
+		},
+		{
+			"path": ".."
+		}
+	]
+}

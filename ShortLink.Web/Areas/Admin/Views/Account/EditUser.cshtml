@@ -1,0 +1,53 @@
+﻿@model ShortLink.Application.DTOs.Account.EditUserDTO
+@{
+    ViewData["Title"] = "ویرایش کاربران";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">@ViewData["Title"]</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary"> بازگشت به لیست</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <form asp-area="Admin" asp-controller="Account" asp-action="EditUser" method="post">
+        <input type="hidden" asp-for="UserId" />
+        <div class="col-md-12">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">نام :</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="FirstName">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">نام خانوادگی</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="LastName">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">تلفن همراه:</label>
+                <div class="col-sm-10">
+                    <p>@Model.Mobile</p>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">ادمین هست / نسیت</label>
+                <div class="col-sm-10">
+                    <input class="form-check" asp-for="IsAdmin">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 form-check-label">بلاک هست / نیست</label>
+                <div class="col-sm-10">
+                    <input class="form-check" asp-for="IsBlocked">
+                </div>
+            </div>
+            <input type="submit" value="ویرایش" class="btn btn-warning" />
+        </div>
+
+    </form>
+</div>

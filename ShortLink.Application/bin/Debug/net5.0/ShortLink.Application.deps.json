@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ShortLink.Application/1.0.0": {
+        "dependencies": {
+          "ShortLink.Domain": "1.0.0",
+          "UAParser": "3.1.47"
+        },
+        "runtime": {
+          "ShortLink.Application.dll": {}
+        }
+      },
+      "UAParser/3.1.47": {
+        "runtime": {
+          "lib/netcoreapp2.0/UAParser.dll": {
+            "assemblyVersion": "3.1.47.0",
+            "fileVersion": "3.1.47.0"
+          }
+        }
+      },
+      "ShortLink.Domain/1.0.0": {
+        "runtime": {
+          "ShortLink.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ShortLink.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UAParser/3.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I68Jl/Vs5RQZdz9BbmYtnXgujg0jVd61LhKbyNZOCm9lBxZFGxLbiQo6yFj21VYi7DzPvEvrVOmeC6v41AoLfw==",
+      "path": "uaparser/3.1.47",
+      "hashPath": "uaparser.3.1.47.nupkg.sha512"
+    },
+    "ShortLink.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

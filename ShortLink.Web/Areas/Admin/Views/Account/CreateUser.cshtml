@@ -1,0 +1,63 @@
+﻿@model ShortLink.Application.DTOs.Account.CreateUserDTO
+@{
+    ViewData["Title"] = " ایجاد کاربر";
+}
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+ }
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">@ViewData["Title"]</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary"> بازگشت به لیست</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <form asp-area="Admin" asp-controller="Account" asp-action="CreateUser" method="post">
+        <div class="col-md-12">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">نام :</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="FirstName">
+                </div>
+                <span class="text-danger" asp-validation-for="FirstName"></span>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">نام خانوادگی</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="LastName">
+                </div>
+                <span class="text-danger" asp-validation-for="LastName"></span>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">تلفن همراه:</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="Mobile">
+                </div>
+                <span class="text-danger" asp-validation-for="Mobile"></span>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 form-check-label">گذرواژه</label>
+                <div class="col-sm-10">
+                    <input class="form-control" asp-for="Password">
+                </div>
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">ادمین هست / نسیت</label>
+                <div class="col-sm-10">
+                    <input class="form-check" asp-for="IsAdmin">
+                </div>
+                
+            </div>
+            <input type="submit" value="ثبت" class="btn btn-success" />
+        </div>
+
+    </form>
+</div>
+
+

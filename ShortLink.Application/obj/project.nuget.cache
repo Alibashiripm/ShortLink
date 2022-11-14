@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8cXdh8YIGSANsqAiGEgxRbRmjHTOzrK6F0yboYvMjzprAW6fpiOor0yKpL8Q3GlaYg+Zox7lz2aFJ0IyGJhmhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ALI.B\\Desktop\\ShortLink\\ShortLink.Application\\ShortLink.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ALI.B\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512"
+  ],
+  "logs": []
+}
