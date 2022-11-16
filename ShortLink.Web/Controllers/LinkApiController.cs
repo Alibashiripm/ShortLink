@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShortLink.Application.DTOs.Link;
 using ShortLink.Application.Interfaces;
 using ShortLink.Domain.Interface;
@@ -8,6 +9,7 @@ using ShortLink.Domain.ViewModels.Link;
 using ShortLink.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using System.Security.Policy;
 using System.Threading.Tasks;
 
@@ -59,13 +61,6 @@ namespace ShortLink.Web.Controllers
         }
 
         // DELETE api/<LinkApiController>/token
-        [HttpDelete("{token}")]
-        public async Task Delete([FromRoute]string token)
-        {
-            var url = _linkService.FindUrlByToken(token);
-                  _context.Remove(url);
-          await  _context.SaveChangesAsync();
 
-         }
     }
 }
