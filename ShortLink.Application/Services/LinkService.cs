@@ -69,6 +69,14 @@ namespace ShortLink.Application.Services
         {
             return await _linkRepository.GetAllLink();
         }
+        public async Task<List<AllLinkApiViewModel>> GetAllLinkApi()
+        {
+            return await _linkRepository.GetAllLinkApi();
+        }   
+        public async Task<AllLinkApiViewModel> GetLinkApi(string token)
+        {
+            return await _linkRepository.GetLinkApi(token);
+        }
 
 
         #endregion

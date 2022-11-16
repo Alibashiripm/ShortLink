@@ -13,7 +13,10 @@ namespace ShortLink.Domain.Interface
   
         Task<ShortUrl> FindUrlByToken(string token);
         Task AddRequsetUrl(RequestUrl requestUrl);
-        Task<List<AllLinkViewModel>> GetAllLink();
+        Task<List<AllLinkViewModel>> GetAllLink(); 
+        Task<List<AllLinkApiViewModel>> GetAllLinkApi();
+        Task<AllLinkApiViewModel> GetLinkApi(string token);
+     
         #endregion
         Task SaveChange();
     }

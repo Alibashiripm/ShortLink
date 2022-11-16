@@ -15,6 +15,8 @@ namespace ShortLink.Application.Interfaces
         Task<ShortUrl> FindUrlByToken(string token);
         Task AddRequestUrl(string token);
         Task<List<AllLinkViewModel>> GetAllLink();
+        Task<List<AllLinkApiViewModel>> GetAllLinkApi();
+        Task<AllLinkApiViewModel> GetLinkApi(string token);
         #endregion
     }
 }

@@ -3,6 +3,7 @@ using ShortLink.Domain.Interface;
 using ShortLink.Domain.Models.Link;
 using ShortLink.Domain.ViewModels.Link;
 using ShortLink.Infra.Data.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -46,6 +47,28 @@ namespace ShortLink.Infra.Data.Repositories
                     Value=c.Value.ToString()
                 }).ToListAsync();
         }
+        public async Task<List<AllLinkApiViewModel>> GetAllLinkApi()
+        {
+            return await _context.ShortUrls.AsQueryable()
+                .Select(c => new AllLinkApiViewModel
+                {
+                    OrginalUrl = c.OrginalUrl.ToString(),
+                    ShortLink = c.Value.ToString()
+                }).ToListAsync();
+        }  public async Task<AllLinkApiViewModel> GetLinkApi(string token)
+        {
+            var link = await _context.ShortUrls.SingleOrDefaultAsync(t => t.Token == token);
+            return new AllLinkApiViewModel()
+            {
+                OrginalUrl = link.OrginalUrl.ToString(),
+                ShortLink = link.Value.ToString()
+            };
+        
+        }
+
+
+
+        
         #endregion
 
         #region dispose & save change
@@ -58,6 +81,8 @@ namespace ShortLink.Infra.Data.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        
         #endregion
     }
 }
