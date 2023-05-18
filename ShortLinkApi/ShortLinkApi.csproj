@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShortLink.Application\ShortLink.Application.csproj" />
+    <ProjectReference Include="..\ShortLink.Domain\ShortLink.Domain.csproj" />
+    <ProjectReference Include="..\ShortLink.Infra.Data\ShortLink.Infra.Data.csproj" />
+    <ProjectReference Include="..\ShortLink.Infra.IoC\ShortLink.Infra.IoC.csproj" />
+  </ItemGroup>
+
+</Project>

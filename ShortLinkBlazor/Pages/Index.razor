@@ -1,0 +1,53 @@
+﻿@page "/{token?}"
+@inject IClient httpClient;
+@inject NavigationManager _navigationManager
+
+<PageTitle>Shrot Link Blazor</PageTitle>
+
+<div class="container">
+    <div class="banner-content"></div>
+    <div class="banner-form-group">
+        <h3 class="subtitle">Shorten URL Is Just Simple</h3>
+        <EditForm class="banner-form" Model="UrlModel" OnValidSubmit="HandleReq">
+      <DataAnnotationsValidator />
+        <ValidationSummary />
+            <InputText type="text" placeholder="Your URL here" @bind-Value="UrlModel.OrginalUrl" />
+                     <ValidationMessage For="@(() => UrlModel.OrginalUrl)"/>
+           <button type="submit" > get link! <i class="flaticon-startup"></i></button>
+        </EditForm>
+
+       @if (linkshort != "")
+        {
+                    <div class="alert alert-warning">@linkshort</div>
+
+        }
+
+      
+        
+    </div>
+</div>
+
+
+@code{
+    [Parameter]
+    public string? token { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (token != null)
+        {
+                var originalLink =  httpClient.LinkApiGETAsync(token).Result;
+        Uri uri = new Uri(originalLink);
+        _navigationManager.NavigateTo(originalLink);    
+        }
+
+    }
+    UrlRequestDTO UrlModel = new UrlRequestDTO();
+    string linkshort = "";
+    private async void HandleReq()
+    {
+     linkshort = httpClient.LinkApiPOSTAsync(UrlModel).Result;
+
+    }
+
+}
